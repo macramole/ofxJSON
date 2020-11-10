@@ -57,7 +57,7 @@ bool ofxJSONElement::openLocal(const std::string& filename)
 
     if (!reader.parse(buffer.getText(), *this))
     {
-        ofLogError("ofxJSONElement::openLocal") << "Unable to parse " << filename << ": " << reader.getFormattedErrorMessages();
+//        ofLogError("ofxJSONElement::openLocal") << "Unable to parse " << filename << ": " << reader.getFormattedErrorMessages();
         return false;
     }
     else
